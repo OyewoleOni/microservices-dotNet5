@@ -1,15 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "VLJwoqD2RIvEEl3IeQiUiPAK5sWBbZCjnu6t15JPR/8gTuK9a5F/PLP19OuhRTvAvkUEYlXS1br1uITIiGnc0A==",
+  "dgSpecHash": "qhjOYNpUlJ3QUeOuo8bmAywi70LNRyIFXZ/5cVH+2XLzvLdNw+7F9y9KfgI4LC1kwJO9BjvpG6H+1Z0mfkQCWA==",
   "success": true,
   "projectFilePath": "/Users/macdev02/Documents/oni/microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
   "expectedPackageFiles": [
+    "/Users/macdev02/.nuget/packages/dnsclient/1.6.0/dnsclient.1.6.0.nupkg.sha512",
     "/Users/macdev02/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "/Users/macdev02/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/mongodb.bson/2.15.0/mongodb.bson.2.15.0.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/mongodb.driver/2.15.0/mongodb.driver.2.15.0.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/mongodb.driver.core/2.15.0/mongodb.driver.core.2.15.0.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/mongodb.libmongocrypt/1.3.0/mongodb.libmongocrypt.1.3.0.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
     "/Users/macdev02/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "/Users/macdev02/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "/Users/macdev02/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
     "/Users/macdev02/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/Users/macdev02/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
     "/Users/macdev02/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.13/microsoft.netcore.app.host.osx-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
