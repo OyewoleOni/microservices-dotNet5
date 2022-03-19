@@ -6,10 +6,11 @@ using Play.Catalog.Service.Entities;
 
 namespace Play.Catalog.Service.Repositories
 {
-    public class ItemRepository{
+    public class ItemRepository : IItemRepository
+    {
         private const string collectionName = "items";
         private readonly IMongoCollection<Item> dbCollection;
-        private readonly  FilterDefinitionBuilder<Item> FilterBuilder = Builders<Item>.Filter;
+        private readonly FilterDefinitionBuilder<Item> FilterBuilder = Builders<Item>.Filter;
 
         public ItemRepository()
         {
@@ -23,14 +24,16 @@ namespace Play.Catalog.Service.Repositories
             return await dbCollection.Find(FilterBuilder.Empty).ToListAsync();
         }
 
-        public async Task<Item> GetItemAsync(Guid id){
+        public async Task<Item> GetItemAsync(Guid id)
+        {
             FilterDefinition<Item> filter = FilterBuilder.Eq(entity => entity.Id, id);
             return await dbCollection.Find(filter).FirstOrDefaultAsync();
         }
 
         public async Task CreateAsync(Item entity)
         {
-            if(entity is null){
+            if (entity is null)
+            {
                 throw new ArgumentNullException(nameof(entity));
             }
             await dbCollection.InsertOneAsync(entity);
@@ -38,15 +41,17 @@ namespace Play.Catalog.Service.Repositories
 
         public async Task UpdateAsync(Item entity)
         {
-              if(entity is null){
+            if (entity is null)
+            {
                 throw new ArgumentNullException(nameof(entity));
             }
 
-            FilterDefinition<Item> filter  = FilterBuilder.Eq(existingEntity => existingEntity.Id, entity.Id);
+            FilterDefinition<Item> filter = FilterBuilder.Eq(existingEntity => existingEntity.Id, entity.Id);
             await dbCollection.ReplaceOneAsync(filter, entity);
         }
 
-        public async Task RemoveAsync(Guid id){
+        public async Task RemoveAsync(Guid id)
+        {
             FilterDefinition<Item> filter = FilterBuilder.Eq(entity => entity.Id, id);
             await dbCollection.DeleteOneAsync(filter);
         }
